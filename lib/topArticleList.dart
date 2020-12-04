@@ -1,10 +1,9 @@
 import 'dart:convert';
-
 import 'package:demo_hacker_news/story.dart';
 import 'package:demo_hacker_news/webservice.dart';
 import 'package:flutter/material.dart';
 
-import 'commentListPage.dart';
+
 
 class TopArticleList extends StatefulWidget {
   @override
@@ -42,11 +41,7 @@ class _TopArticleListState extends State<TopArticleList> {
 
     debugPrint("$comments");
 
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) =>
-                CommentListPage(story: story, comments: comments)));
+    
   }
 
   @override
