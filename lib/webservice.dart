@@ -1,11 +1,9 @@
 import 'dart:convert';
-
 import 'package:demo_hacker_news/story.dart';
 import 'package:demo_hacker_news/urlHelper.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
-
 class Webservice {
   Future<Response> _getStory(int storyId) {
     return http.get(UrlHelper.urlForStory(storyId));

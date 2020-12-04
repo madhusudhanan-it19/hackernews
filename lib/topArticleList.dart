@@ -2,9 +2,6 @@ import 'dart:convert';
 import 'package:demo_hacker_news/story.dart';
 import 'package:demo_hacker_news/webservice.dart';
 import 'package:flutter/material.dart';
-
-
-
 class TopArticleList extends StatefulWidget {
   @override
   _TopArticleListState createState() => _TopArticleListState();
